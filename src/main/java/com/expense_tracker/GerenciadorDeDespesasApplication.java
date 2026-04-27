@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class GerenciadorDeDespesasApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(GerenciadorDeDespesasApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(GerenciadorDeDespesasApplication.class, args);
+    }
 
 }
