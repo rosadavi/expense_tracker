@@ -1,0 +1,17 @@
+package com.expense_tracker.repository;
+
+import com.expense_tracker.model.Expense;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import java.util.List;
+import java.util.UUID;
+
+// repository responsavel por atribuir as relacoes de banco com a entidade em si
+// so repository cru me permite usar create, query e delete
+// JPA compreende o nome das funcoes dentroo da interface que extende Jpa para algumas funcoes "findByUserId()"
+
+@Repository
+public interface ExpenseRepository extends JpaRepository<Expense, UUID> {
+    List<Expense> findByUserId(UUID id);
+}
