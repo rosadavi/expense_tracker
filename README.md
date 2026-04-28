@@ -89,13 +89,16 @@ Authorization: Bearer SEU_TOKEN_AQUI
 
 ### 💸 Expenses
 
-| Método | Rota             | Descrição          |
-| ------ | ---------------- | ------------------ |
-| GET    | /expenses        | Listar despesas    |
-| GET    | /expenses/filter | Filtrar despesas   |
-| POST   | /expenses        | Criar nova despesa |
-| PUT    | /expenses/{id}   | Atualizar despesa  |
-| DELETE | /expenses/{id}   | Remover despesa    |
+| Método | Rota                                | Descrição                                                        |
+|--------|-------------------------------------|------------------------------------------------------------------|
+| GET    | /expense                            | Listar despesas                                                  |
+| POST   | /expense/{userId}                   | Criar nova despesa                                               |
+| DELETE | /expense/{expenseId}                | Remover despesa                                                  |
+| DELETE | /expense/{id}                       | Remover despesa                                                  |
+| GET    | /expense/analytics/week/{userId}    | Listar despesa da última semana                                  |
+| GET    | /expense/analytics/month/{userId}   | Listar despesa do último mês                                     |
+| GET    | /expense/analytics/3months/{userId} | Listar despesa dos últimos 3 mêses                               |
+| GET    | /expense/analytics/filter/{userId}  | Listar despesa com data início e data fim (aplicados nos params) |
 
 ---
 
@@ -119,7 +122,7 @@ Authorization: Bearer SEU_TOKEN_AQUI
 
 ---
 
-## 🏷️ Categorias de Despesas
+## 🏷️ Categorias de Despesas demonstrativas
 
 * Supermercado
 * Lazer
