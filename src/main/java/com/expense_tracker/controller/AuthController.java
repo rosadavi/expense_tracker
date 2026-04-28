@@ -38,4 +38,9 @@ public class AuthController {
 
         return ResponseEntity.ok(new LoginResponse(token));
     }
+
+    @PostMapping("/register")
+    public ResponseEntity<User> register(@RequestBody User user) {
+        return ResponseEntity.ok(userService.createUser(user));
+    }
 }
