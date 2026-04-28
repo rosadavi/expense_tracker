@@ -8,15 +8,6 @@ import org.springframework.security.config.annotation.web.configurers.AbstractHt
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
-/**
- * Classe de configuração de segurança da aplicação.
- *
- * Define:
- * - quais rotas são públicas ou protegidas
- * - desabilita CSRF (para APIs REST)
- * - adiciona o filtro JWT ao fluxo de autenticação
- */
-
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig {

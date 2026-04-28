@@ -6,9 +6,6 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.UUID;
 
-// possivel definis relacoes de tabelas e a coluna que fara essa relacao
-// @JoinColumn "junta" a tabela atual com a tabela associada, pra associar bastar aplicar o tipo da variavel igual ao tipo da classe/entidade
-
 @Entity
 @Table(name= "expenses")
 public class Expense {

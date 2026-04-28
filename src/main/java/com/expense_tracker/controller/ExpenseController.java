@@ -8,9 +8,6 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.UUID;
 
-// A anotacao de pathvariable pega o valor entre chaves na URL
-// !! isso vai vim do JWT futuramente !!
-
 @RestController
 @RequestMapping("/expense")
 public class ExpenseController {

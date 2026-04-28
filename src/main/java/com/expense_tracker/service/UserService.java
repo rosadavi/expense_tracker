@@ -8,9 +8,6 @@ import org.springframework.stereotype.Service;
 import java.util.Optional;
 import java.util.UUID;
 
-// Servicos de user
-// Injeta o repositorio do user na criacao do objeto UserService e o torna privado
-
 @Service
 public class UserService {
 

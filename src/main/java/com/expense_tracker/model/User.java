@@ -4,9 +4,6 @@ import jakarta.persistence.*;
 
 import java.util.UUID;
 
-// So e necessario passar @Column pra uma variavel se no banco ela precisar de alguma configuracao
-// -> a coluna email deve ser unica, entao foi aplicado uma configuracao pra tal
-
 @Entity
 @Table(name = "users")
 public class User {

@@ -18,7 +18,6 @@ public class ExpenseService {
         this.user = userService;
     }
 
-    // Necessario garantir que user existe, caso contratio pode dar erro de run time
     public Expense createExpense(UUID userId, Expense expense) {
         User user = this.user.findById(userId).orElseThrow(() -> new RuntimeException("User not Found"));
 

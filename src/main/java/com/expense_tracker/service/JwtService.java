@@ -11,7 +11,6 @@ import java.util.Date;
 @Service
 public class JwtService {
 
-
     private Key getKey() {
         final String SECRET = "minha-chave-super-secreta-com-pelo-menos-32-bytes!!";
         return Keys.hmacShaKeyFor(SECRET.getBytes(StandardCharsets.UTF_8));
