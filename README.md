@@ -26,7 +26,8 @@ Cada usuário possui seus próprios dados isolados, garantindo segurança e orga
 * JWT (JSON Web Token)
 * JPA / Hibernate
 * Banco de dados relacional (ex: PostgreSQL ou MySQL)
-* Docker (opcional)
+* Docker / Podman (ambiente containerizado)
+* PostgreSQL (via container)
 
 ---
 
@@ -138,14 +139,12 @@ Authorization: Bearer SEU_TOKEN_AQUI
 
 ### Pré-requisitos
 
-* Java 17+
-* Maven ou Gradle
-* Docker (opcional)
-* Banco de dados configurado
+* Docker ou Podman
+* Docker Compose / Podman Compose
 
 ---
 
-### Passos
+### Passos rodando com Docker
 
 ```bash
 # Clonar repositório
@@ -154,8 +153,8 @@ git clone https://github.com/rosadavi/expense_tracker.git
 # Entrar no projeto
 cd expense_tracker
 
-# Rodar aplicação
-./mvnw spring-boot:run
+# Subir aplicação + banco
+docker compose up --build
 ```
 
 ---
