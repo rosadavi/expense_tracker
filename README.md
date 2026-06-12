@@ -177,6 +177,14 @@ Você pode usar:
 * Integração com frontend
 * Refresh token
 
+## Project Inspiration
+
+This project was built following the Expense Tracker API challenge from roadmap.sh:
+
+- Expense Tracker API: https://roadmap.sh/projects/expense-tracker-api
+
+The challenge focuses on building a secure REST API with JWT authentication, user-specific expense management, filtering by date ranges, and full CRUD operations for expenses. :contentReference[oaicite:0]{index=0}
+
 ---
 
 ## 📄 Licença
